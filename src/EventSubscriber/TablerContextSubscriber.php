@@ -18,7 +18,6 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 final class TablerContextSubscriber implements EventSubscriberInterface
 {
-
     public function __construct(private readonly ContextHelper $contextHelper, private readonly RequestStack $requestStack)
     {
     }
