@@ -5,7 +5,6 @@
     "type": "project",
     "require": {
         "php": "^8.2",
-        "composer/package-versions-deprecated": "^1.11.99",
         "erusev/parsedown": "@stable",
         "kevinpapst/tabler-bundle": "dev-main",
         "knplabs/knp-menu-bundle": "@stable",
@@ -36,7 +35,6 @@
             "php": "8.2"
         },
         "allow-plugins": {
-            "composer/package-versions-deprecated": true,
             "symfony/flex": true,
             "symfony/runtime": true
         },
