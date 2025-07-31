@@ -31,7 +31,6 @@ tabler:
     routes:
         tabler_welcome: homepage
         tabler_login: security_login
-        tabler_logout: security_logout
         tabler_login_check: security_login
 
     icons:

@@ -18,7 +18,7 @@ use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
 class MenuBuilderSubscriber implements EventSubscriberInterface
 {
-    public function __construct(private AuthorizationCheckerInterface $security, private string $environment)
+    public function __construct(private readonly AuthorizationCheckerInterface $security, private readonly string $environment)
     {
     }
 

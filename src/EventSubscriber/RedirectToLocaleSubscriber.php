@@ -31,10 +31,10 @@ class RedirectToLocaleSubscriber implements EventSubscriberInterface
      *
      * @var string[]
      */
-    private $locales = [];
-    private $defaultLocale = '';
+    private array $locales = [];
+    private string $defaultLocale = '';
 
-    public function __construct(private UrlGeneratorInterface $urlGenerator, string $locales, ?string $defaultLocale = null)
+    public function __construct(private readonly UrlGeneratorInterface $urlGenerator, string $locales, ?string $defaultLocale = null)
     {
         $this->locales = explode('|', trim($locales));
         if (empty($this->locales)) {
@@ -65,7 +65,7 @@ class RedirectToLocaleSubscriber implements EventSubscriberInterface
         ];
     }
 
-    public function onKernelRequest(RequestEvent $event)
+    public function onKernelRequest(RequestEvent $event): void
     {
         $request = $event->getRequest();
 

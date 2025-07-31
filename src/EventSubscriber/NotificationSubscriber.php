@@ -21,7 +21,7 @@ use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
  */
 class NotificationSubscriber implements EventSubscriberInterface
 {
-    public function __construct(private AuthorizationCheckerInterface $security)
+    public function __construct(private readonly AuthorizationCheckerInterface $security)
     {
     }
 

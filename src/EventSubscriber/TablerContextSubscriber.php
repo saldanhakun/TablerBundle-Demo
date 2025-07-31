@@ -18,7 +18,8 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 final class TablerContextSubscriber implements EventSubscriberInterface
 {
-    public function __construct(private ContextHelper $contextHelper, private RequestStack $requestStack)
+
+    public function __construct(private readonly ContextHelper $contextHelper, private readonly RequestStack $requestStack)
     {
     }
 
@@ -39,6 +40,7 @@ final class TablerContextSubscriber implements EventSubscriberInterface
         if ($theme === null) {
             return;
         }
+
         $this->contextHelper->setIsDarkMode($theme === 'dark');
     }
 }

@@ -1,35 +1,35 @@
 {
     "name": "kevinpapst/tabler-bundle-demo",
     "license": "MIT",
-    "type": "project",
     "description": "Demo application to showcase the Tabler Bundle",
+    "type": "project",
     "require": {
-        "php": "8.1.*||8.2.*",
+        "php": "^8.1",
         "composer/package-versions-deprecated": "^1.11.99",
-        "erusev/parsedown": "^1.7",
+        "erusev/parsedown": "@stable",
         "kevinpapst/tabler-bundle": "dev-main",
-        "knplabs/knp-menu-bundle": "^3.0",
-        "symfony/asset": "^6.0",
-        "symfony/console": "^6.0",
-        "symfony/dotenv": "^6.0",
-        "symfony/flex": "^1.0",
-        "symfony/form": "^6.0",
-        "symfony/framework-bundle": "^6.0",
-        "symfony/intl": "^6.0",
-        "symfony/runtime": "5.*",
-        "symfony/security-bundle": "^6.0",
-        "symfony/stopwatch": "^6.0",
-        "symfony/translation": "^6.0",
-        "symfony/twig-bundle": "^6.0",
-        "symfony/validator": "^6.0",
-        "symfony/webpack-encore-bundle": "^1.9",
-        "symfony/yaml": "^6.0"
+        "knplabs/knp-menu-bundle": "@stable",
+        "symfony/asset": "*",
+        "symfony/console": "*",
+        "symfony/dotenv": "*",
+        "symfony/flex": "*",
+        "symfony/form": "*",
+        "symfony/framework-bundle": "*",
+        "symfony/intl": "*",
+        "symfony/runtime": "*",
+        "symfony/security-bundle": "*",
+        "symfony/stopwatch": "*",
+        "symfony/translation": "*",
+        "symfony/twig-bundle": "*",
+        "symfony/validator": "*",
+        "symfony/webpack-encore-bundle": "*",
+        "symfony/yaml": "*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "phpstan/phpstan": "^1.2",
-        "symfony/debug-bundle": "^6.0",
-        "symfony/web-profiler-bundle": "^6.0"
+        "friendsofphp/php-cs-fixer": "@stable",
+        "phpstan/phpstan": "@stable",
+        "symfony/debug-bundle": "*",
+        "symfony/web-profiler-bundle": "*"
     },
     "config": {
         "platform": {
@@ -58,19 +58,7 @@
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-mbstring": "*",
-        "symfony/polyfill-intl": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php81": "*",
-        "symfony/polyfill-php80": "*",
-        "symfony/polyfill-php74": "*",
-        "symfony/polyfill-php73": "*",
-        "symfony/polyfill-php72": "*",
-        "symfony/polyfill-php71": "*",
-        "symfony/polyfill-php70": "*",
-        "symfony/polyfill-php56": "*",
-        "symfony/polyfill-php55": "*",
-        "symfony/polyfill-php54": "*"
+        "symfony/polyfill-iconv": "*"
     },
     "scripts": {
         "auto-scripts": {
@@ -100,7 +88,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.3.*"
+            "require": "7.3.*"
         }
     }
 }
